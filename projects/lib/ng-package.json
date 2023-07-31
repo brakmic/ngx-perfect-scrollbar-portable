@@ -3,10 +3,6 @@
   "dest": "../../dist/lib",
   "lib": {
     "entryFile": "src/public-api.ts",
-    "umdModuleIds": {
-      "perfect-scrollbar": "PerfectScrollbar",
-      "resize-observer-polyfill": "ResizeObserver"
-    }
   },
   "allowedNonPeerDependencies": [
     "perfect-scrollbar",

@@ -50,6 +50,14 @@
     "perfect-scrollbar": "^1.5.0",
     "resize-observer-polyfill": "^1.5.0"
   },
+  "allowedNonPeerDependencies": [
+    "perfect-scrollbar",
+    "resize-observer-polyfill"
+  ],
+  "umdModuleIds": {
+    "perfect-scrollbar": "PerfectScrollbar",
+    "resize-observer-polyfill": "ResizeObserver"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "^12.2.18",
     "@angular/cli": "^12.2.18",
