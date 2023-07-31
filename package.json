@@ -43,7 +43,6 @@
     "@angular/common": "^13.4.0",
     "@angular/compiler": "^13.4.0",
     "@angular/core": "^13.4.0",
-    "@angular/flex-layout": "10.0.0-beta.32",
     "@angular/platform-browser": "^13.4.0",
     "@angular/platform-browser-dynamic": "^13.4.0",
     "perfect-scrollbar": "^1.5.0",
