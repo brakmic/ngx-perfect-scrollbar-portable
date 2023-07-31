@@ -11,7 +11,7 @@
     "start": "ng serve app",
     "build": "ng build lib",
     "deploy": "deploy-to-git",
-    "prepare": "ng build lib --prod",
+    "prepare": "ng build lib",
     "publish": "npm publish ./dist/lib",
     "predeploy": "rimraf ./dist/app && mkdirp ./dist/app",
     "postinstall": "ngcc"
