@@ -22,7 +22,6 @@
       }
     }
   },
-  "defaultProject": "lib",
   "cli": {
     "analytics": "8d25c001-1795-4a34-8df0-93df0e63f88f"
   }
