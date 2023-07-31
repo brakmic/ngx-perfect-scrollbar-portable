@@ -18,7 +18,7 @@ perfect-scrollbar[hidden] {
   display: none;
 }
 
-perfect-scrollbar[fxflex] {
+/* perfect-scrollbar[fxflex] {
   display: flex;
   flex-direction: column;
   height: auto;
@@ -27,9 +27,9 @@ perfect-scrollbar[fxflex] {
 
   -webkit-box-direction: column;
   -webkit-box-orient: column;
-}
+} */
 
-perfect-scrollbar[fxflex] > .ps {
+/* perfect-scrollbar[fxflex] > .ps {
   -ms-flex: 1 1 auto;
 
   flex: 1 1 auto;
@@ -39,9 +39,9 @@ perfect-scrollbar[fxflex] > .ps {
   min-height: 0;
 
   -webkit-box-flex: 1;
-}
+} */
 
-perfect-scrollbar[fxlayout] > .ps,
+/* perfect-scrollbar[fxlayout] > .ps,
 perfect-scrollbar[fxlayout] > .ps > .ps-content {
   display: flex;
 
@@ -60,9 +60,9 @@ perfect-scrollbar[fxlayout] > .ps > .ps-content {
   -webkit-box-flex: 1;
   -webkit-box-orient: inherit;
   -webkit-box-pack: inherit;
-}
+} */
 
-perfect-scrollbar[fxlayout='row'] > .ps,
+/* perfect-scrollbar[fxlayout='row'] > .ps,
 perfect-scrollbar[fxlayout='row'] > .ps > .ps-content, {
   flex-direction: row !important;
 
@@ -76,7 +76,7 @@ perfect-scrollbar[fxlayout='column'] > .ps > .ps-content {
 
   -webkit-box-direction: column !important;
   -webkit-box-orient: column !important;
-}
+} */
 
 perfect-scrollbar > .ps {
   position: static;
