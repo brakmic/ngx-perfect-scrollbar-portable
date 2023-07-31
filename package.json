@@ -13,8 +13,7 @@
     "deploy": "deploy-to-git",
     "prepare": "ng build lib",
     "publish": "npm publish ./dist/lib",
-    "predeploy": "rimraf ./dist/app && mkdirp ./dist/app",
-    "postinstall": "ngcc"
+    "predeploy": "rimraf ./dist/app && mkdirp ./dist/app"
   },
   "tslint": {
     "extends": "./tslint.json"
