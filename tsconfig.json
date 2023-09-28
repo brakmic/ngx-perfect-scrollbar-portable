@@ -7,11 +7,17 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ES2022",
+    "moduleResolution": "Node",
     "importHelpers": true,
     "target": "ES2022",
     "skipLibCheck": true,
+    "skipDefaultLibCheck": false,
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -20,14 +26,16 @@
       "dom"
     ],
     "paths": {
-      "ngx-perfect-scrollbar": [
+      "ngx-perfect-scrollbar-portable": [
         "dist/lib"
       ]
     },
     "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
   }
 }

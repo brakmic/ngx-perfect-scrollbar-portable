@@ -13,7 +13,8 @@
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {
-    "@angular/common": ">=15.2.9",
-    "@angular/core": ">=15.2.9"
-  }
+    "@angular/common": "^16.2.7",
+    "@angular/core": "^16.2.7"
+  },
+  "sideEffects": false
 }

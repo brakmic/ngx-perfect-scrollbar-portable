@@ -16,13 +16,26 @@
             "project": "projects/lib/ng-package.json"
           },
           "configurations": {
-            "production": {}
+            "production": {
+              "tsConfig": "projects/lib/tsconfig.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/lib/**/*.ts",
+              "projects/lib/**/*.html"
+            ]
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": "8d25c001-1795-4a34-8df0-93df0e63f88f"
+    "analytics": "8d25c001-1795-4a34-8df0-93df0e63f88f",
+    "schematicCollections": ["@angular-eslint/schematics"]
   }
 }
