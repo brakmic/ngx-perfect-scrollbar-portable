@@ -68,6 +68,7 @@
     "codelyzer": "^6.0.0",
     "core-js": "^3.6.0",
     "cpx": "^1.5.0",
+    "cpy-cli": "^5.0.0",
     "deploy-to-git": "^0.1.0",
     "eslint": "^8.50.0",
     "mkdirp": "^1.0.0",
