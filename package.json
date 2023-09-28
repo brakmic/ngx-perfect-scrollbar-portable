@@ -1,8 +1,8 @@
 {
-  "name": "ngx-perfect-scrollbar",
-  "description": "Angular wrapper library for Perfect Scrollbar",
-  "bugs": "https://github.com/zefoy/ngx-perfect-scrollbar/issues",
-  "version": "10.1.1",
+  "name": "ngx-perfect-scrollbar-portable",
+  "description": "Angular wrapper library for Perfect Scrollbar (portable variant)",
+  "bugs": "https://github.com/brakmic/ngx-perfect-scrollbar-portable/issues",
+  "version": "10.1.2",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -15,26 +15,23 @@
     "publish": "npm publish ./dist/lib",
     "predeploy": "rimraf ./dist/app && mkdirp ./dist/app"
   },
-  "tslint": {
-    "extends": "./tslint.json"
-  },
   "stylelint": {
     "extends": "./stylelint.json"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zefoy/ngx-perfect-scrollbar.git"
+    "url": "https://github.com/brakmic/ngx-perfect-scrollbar-portable.git"
   },
   "config": {
     "deployToGit": {
-      "repository": "git@github.com:zefoy/ngx-perfect-scrollbar.git",
+      "repository": "git@github.com:brakmic/ngx-perfect-scrollbar-portable.git",
       "branch": "gh-pages",
       "folder": "dist/app",
-      "script": "ng build app --prod -- --base-href=ngx-perfect-scrollbar --delete-output-path=false",
+      "script": "ng build app --prod -- --base-href=ngx-perfect-scrollbar-portable --delete-output-path=false",
       "commit": "Publishing $npm_package_version",
       "user": {
-        "name": "ZEF Devel",
-        "email": "devel@zef.fi"
+        "name": "Harris Brakmic",
+        "email": "brakmic@gmail.com"
       }
     }
   },
@@ -45,8 +42,10 @@
     "@angular/core": "^15.2.9",
     "@angular/platform-browser": "^15.2.9",
     "@angular/platform-browser-dynamic": "^15.2.9",
+    "eslint": "^8.50.0",
     "perfect-scrollbar": "^1.5.0",
-    "resize-observer-polyfill": "^1.5.0"
+    "resize-observer-polyfill": "^1.5.0",
+    "tslib": "^2.6.2"
   },
   "allowedNonPeerDependencies": [
     "perfect-scrollbar",
@@ -75,7 +74,6 @@
     "terser": "^5.0.0",
     "ts-node": "^8.10.0",
     "tsickle": "^0.39.0",
-    "tslint": "^6.1.0",
     "typescript": "~4.9.5",
     "watch": "^1.0.0",
     "zone.js": "~0.11.4"
