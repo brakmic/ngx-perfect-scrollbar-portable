@@ -1,43 +1,27 @@
-# Angular Perfect Scrollbar
+# Angular Perfect Scrollbar Portable
 
-<a href="https://badge.fury.io/js/ngx-perfect-scrollbar"><img src="https://badge.fury.io/js/ngx-perfect-scrollbar.svg" align="right" alt="npm version" height="18"></a>
+This is an Angular wrapper library for the **Perfect Scrollbar**.
 
-This is an Angular wrapper library for the [Perfect Scrollbar](https://utatti.github.io/perfect-scrollbar/). To use this library you should get familiar with the Perfect Scrollbar documentation as well since this documentation only explains details specific to this wrapper.
+### Fork Notice
 
-This documentation is for the latest 5/6.x.x version which requires Angular 5 or newer. For Angular 4 you need to use the latest 4.x.x version. Documentation for the 4.x.x can be found from <a href="https://github.com/zefoy/ngx-perfect-scrollbar/tree/4.x.x/">here</a>.
+This fork was created due to the discontinuation of development on the original library from the repository [zefoy/ngx-perfect-scrollbar](https://github.com/zefoy/ngx-perfect-scrollbar). The original library hasn't been maintained for a while and exhibited incompatibilities with Angular version 16. This fork addresses those issues and makes the library compatible with Angular version 16.
 
-### EOL notice
+### Prerequisites
 
-Version 10.0.0 will be the last release of this library. I recommend you to switch to using native Angular scrollbar libraries such as ngx-scrollbar. There are also forks available (just search with perfect-scrollbar from npm registry) if you really want to use a wrapper library for perfect scrollbar. For the sake of good code and practices I would personally use a native Angular libraries since using Angular wrappers for DOM libraries will always have limitations and performance issues.
+For utilizing this library, it's essential to have at least Node 16 installed on your machine. Additionally, while NPM can be used, [PNPM](https://pnpm.io/) is preferred due to its efficient handling of node modules.
 
-Even though I should not need to tell about the motivation for EOL, but since some seem to think its required the main reason for EOL this library was that at the time perfect-scrollbar library itself was not maintained (do not know the current situation though) and none of the bugs it had were being addressed. That and the native Angular libraries coming to existence that do this better sealed the decision to end this library.
-
-### Quick links
-
-[Example application](https://zefoy.github.io/ngx-perfect-scrollbar/)
- |
-[StackBlitz example](https://stackblitz.com/github/zefoy/ngx-perfect-scrollbar/tree/master)
- |
-[Perfect Scrollbar documentation](https://github.com/utatti/perfect-scrollbar/)
 
 ### Building the library
 
 ```bash
-npm install
-npm run build
-```
-
-### Running the example
-
-```bash
-npm install
-npm run start
+pnpm install
+pnpm build
 ```
 
 ### Installing and usage
 
 ```bash
-npm install ngx-perfect-scrollbar --save
+pnpm install ngx-perfect-scrollbar-portable --save
 ```
 
 ##### Load the module for your app (with global configuration):
@@ -45,9 +29,9 @@ npm install ngx-perfect-scrollbar --save
 Providing the global configuration is optional and when used you should only provide the configuration in your root module.
 
 ```javascript
-import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
-import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
-import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar-portable';
+import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar-portable';
+import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar-portable';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -167,3 +151,7 @@ scrollToElement(element, offset?, speed?)   // Animate scroll to given or matchi
 ```
 
 Above functions can be accessed through the directive reference (available as directiveRef in the component). Position and offset needs to be given in pixels and speed in milliseconds.
+
+
+## LICENSE
+[MIT](./LICENSE.md)
