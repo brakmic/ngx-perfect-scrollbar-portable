@@ -1,6 +1,7 @@
 The MIT License
 
 Copyright (c) 2016 Zef Oy
+
 Copyright (c) 2023 Harris Brakmic
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
