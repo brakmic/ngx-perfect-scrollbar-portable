@@ -12,7 +12,7 @@
     "build:lib": "pnpm run ng -- build lib --configuration production",
     "deploy": "deploy-to-git",
     "prepare": "ng build lib",
-    "publish:lib": "cd dist/lib && cp *.md && pnpm publish ",
+    "publish:lib": "cd dist/lib && cpy --flat *.md ./dist/lib && pnpm publish ",
     "predeploy": "rimraf ./dist/app && mkdirp ./dist/app"
   },
   "stylelint": {
