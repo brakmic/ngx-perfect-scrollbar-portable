@@ -9,7 +9,7 @@
     "ng": "ng",
     "lint": "ng lint",
     "start": "ng serve app",
-    "build:lib": "pnpm ng -- build lib --configuration production",
+    "build:lib": "pnpm run ng -- build lib --configuration production",
     "deploy": "deploy-to-git",
     "prepare": "ng build lib",
     "publish:lib": "cd dist/lib && cp *.md && pnpm publish ",
