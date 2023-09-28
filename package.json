@@ -9,12 +9,10 @@
     "ng": "ng",
     "lint": "ng lint",
     "start": "ng serve app",
-    "build": "ng build lib",
-    "build:lib": "npm run ng -- build lib --configuration production",
+    "build": "pnpm ng -- build lib --configuration production",
     "deploy": "deploy-to-git",
     "prepare": "ng build lib",
-    "publish": "pnpm publish ./dist/lib",
-    "publish:lib": "cd dist/lib && cp *.md && npm publish ",
+    "publish": "cd dist/lib && cp *.md && pnpm publish ",
     "predeploy": "rimraf ./dist/app && mkdirp ./dist/app"
   },
   "stylelint": {
