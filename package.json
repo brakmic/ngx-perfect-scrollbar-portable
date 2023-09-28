@@ -4,7 +4,7 @@
   "bugs": "https://github.com/brakmic/ngx-perfect-scrollbar-portable/issues",
   "version": "10.1.5",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "ng": "ng",
     "lint": "ng lint",
