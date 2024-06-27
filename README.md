@@ -4,7 +4,7 @@ This is an Angular wrapper library for the **Perfect Scrollbar**.
 
 ### Fork Notice
 
-This fork was created due to the discontinuation of development on the original library from the repository [zefoy/ngx-perfect-scrollbar](https://github.com/zefoy/ngx-perfect-scrollbar). The original library hasn't been maintained for a while and exhibited incompatibilities with Angular version 17. This fork addresses those issues and makes the library compatible with Angular version 17.
+This fork was created due to the discontinuation of development on the original library from the repository [zefoy/ngx-perfect-scrollbar](https://github.com/zefoy/ngx-perfect-scrollbar). The original library hasn't been maintained for a while and exhibited incompatibilities with Angular version 17. This fork addresses those issues and makes the library compatible with Angular version 18.
 
 ### Prerequisites
 
