@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@angular/common':
         specifier: ^17.3.6
-        version: 17.3.6(@angular/core@17.3.6(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1)
+        version: 17.3.11(@angular/core@17.3.11(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1)
       '@angular/core':
         specifier: ^17.3.6
-        version: 17.3.6(rxjs@7.8.1)(zone.js@0.14.4)
+        version: 17.3.11(rxjs@7.8.1)(zone.js@0.14.4)
       perfect-scrollbar:
         specifier: 1.5.5
         version: 1.5.5
@@ -23,15 +23,15 @@ importers:
 
 packages:
 
-  '@angular/common@17.3.6':
-    resolution: {integrity: sha512-ufviCFzQQKWcwc2j3Zi8bHbwkvqh4QU6GDH0u0usOee8xd8KrjgcYl3vD0r1/yxlDsd53Wg9kNRvz/fY+5qQoQ==}
+  '@angular/common@17.3.11':
+    resolution: {integrity: sha512-WG+HQjUaQziYLGdbcv2aW+G73uroN5VF9yk4qWYcolW+VB8SV/DOAol8uFVgCF21cIOl5+wfJZvA4r5oG3dYaw==}
     engines: {node: ^18.13.0 || >=20.9.0}
     peerDependencies:
-      '@angular/core': 17.3.6
+      '@angular/core': 17.3.11
       rxjs: ^6.5.3 || ^7.4.0
 
-  '@angular/core@17.3.6':
-    resolution: {integrity: sha512-8IoeZVNqyeHA+H2dR3VFfz76/TFN1BpXP0aABs2aIUNVQRYlKxALSm1UlavijX8IT0uvd/6GXwE3WgymTcg0wg==}
+  '@angular/core@17.3.11':
+    resolution: {integrity: sha512-2wPZwXFei3kVxK2ylIH6CdGebrC4kvooFx7qoX+250OITAEFMODJGdh/e3x0DpFUjlRvQtIFQ+YpQlfC5JnL4g==}
     engines: {node: ^18.13.0 || >=20.9.0}
     peerDependencies:
       rxjs: ^6.5.3 || ^7.4.0
@@ -46,24 +46,24 @@ packages:
   rxjs@7.8.1:
     resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
 
-  tslib@2.6.2:
-    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+  tslib@2.6.3:
+    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
 
   zone.js@0.14.4:
     resolution: {integrity: sha512-NtTUvIlNELez7Q1DzKVIFZBzNb646boQMgpATo9z3Ftuu/gWvzxCW7jdjcUDoRGxRikrhVHB/zLXh1hxeJawvw==}
 
 snapshots:
 
-  '@angular/common@17.3.6(@angular/core@17.3.6(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1)':
+  '@angular/common@17.3.11(@angular/core@17.3.11(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1)':
     dependencies:
-      '@angular/core': 17.3.6(rxjs@7.8.1)(zone.js@0.14.4)
+      '@angular/core': 17.3.11(rxjs@7.8.1)(zone.js@0.14.4)
       rxjs: 7.8.1
-      tslib: 2.6.2
+      tslib: 2.6.3
 
-  '@angular/core@17.3.6(rxjs@7.8.1)(zone.js@0.14.4)':
+  '@angular/core@17.3.11(rxjs@7.8.1)(zone.js@0.14.4)':
     dependencies:
       rxjs: 7.8.1
-      tslib: 2.6.2
+      tslib: 2.6.3
       zone.js: 0.14.4
 
   perfect-scrollbar@1.5.5: {}
@@ -72,10 +72,10 @@ snapshots:
 
   rxjs@7.8.1:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
-  tslib@2.6.2: {}
+  tslib@2.6.3: {}
 
   zone.js@0.14.4:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
