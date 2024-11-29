@@ -11,3 +11,9 @@ example/npm-debug.log
 example/node_modules/
 
 .nx/
+
+.DS_Store
+.vscode/
+projects/.DS_Store
+projects/app/.DS_Store
+projects/lib/.DS_Store
