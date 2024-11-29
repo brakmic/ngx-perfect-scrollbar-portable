@@ -15,8 +15,8 @@ importers:
         specifier: ^17.3.6
         version: 17.3.11(rxjs@7.8.1)(zone.js@0.14.4)
       perfect-scrollbar:
-        specifier: 1.5.5
-        version: 1.5.5
+        specifier: 1.5.6
+        version: 1.5.6
       resize-observer-polyfill:
         specifier: ^1.5.1
         version: 1.5.1
@@ -37,8 +37,8 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
       zone.js: ~0.14.0
 
-  perfect-scrollbar@1.5.5:
-    resolution: {integrity: sha512-dzalfutyP3e/FOpdlhVryN4AJ5XDVauVWxybSkLZmakFE2sS3y3pc4JnSprw8tGmHvkaG5Edr5T7LBTZ+WWU2g==}
+  perfect-scrollbar@1.5.6:
+    resolution: {integrity: sha512-rixgxw3SxyJbCaSpo1n35A/fwI1r2rdwMKOTCg/AcG+xOEyZcE8UHVjpZMFCVImzsFoCZeJTT+M/rdEIQYO2nw==}
 
   resize-observer-polyfill@1.5.1:
     resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
@@ -66,7 +66,7 @@ snapshots:
       tslib: 2.6.3
       zone.js: 0.14.4
 
-  perfect-scrollbar@1.5.5: {}
+  perfect-scrollbar@1.5.6: {}
 
   resize-observer-polyfill@1.5.1: {}
 

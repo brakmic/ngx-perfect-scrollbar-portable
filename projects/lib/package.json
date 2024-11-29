@@ -2,7 +2,7 @@
   "name": "ngx-perfect-scrollbar-portable",
   "description": "Angular wrapper library for Perfect Scrollbar (portable variant)",
   "bugs": "https://github.com/brakmic/ngx-perfect-scrollbar-portable/issues",
-  "version": "10.1.11",
+  "version": "10.1.12",
   "license": "MIT",
   "private": false,
   "repository": {
@@ -10,7 +10,7 @@
     "url": "https://github.com/brakmic/ngx-perfect-scrollbar-portable.git"
   },
   "dependencies": {
-    "perfect-scrollbar": "1.5.5",
+    "perfect-scrollbar": "1.5.6",
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {

@@ -1,11 +1,12 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { PerfectScrollbarComponent, PerfectScrollbarDirective, PerfectScrollbarModule } from 'ngx-perfect-scrollbar-portable';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar-portable';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar-portable';
+
+import { VERSION } from '@angular/core';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   wheelPropagation: true
@@ -13,10 +14,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [
     CommonModule,
-    RouterOutlet,
     FlexLayoutModule,
     PerfectScrollbarModule
   ],
@@ -29,7 +28,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'app';
 
   public type: string = 'component';
@@ -41,7 +40,17 @@ export class AppComponent {
   @ViewChild(PerfectScrollbarComponent, { static: false }) componentRef?: PerfectScrollbarComponent;
   @ViewChild(PerfectScrollbarDirective, { static: false }) directiveRef?: PerfectScrollbarDirective;
 
+  public angularVersion: string = '';
+  public packageVersion: string = '10.1.12';
+
   constructor() {}
+
+  ngOnInit(): void {
+    this.angularVersion = VERSION.full;
+    console.log(`Running Angular version: ${this.angularVersion}`);
+
+    console.log(`Using ngx-perfect-scrollbar-portable version: ${this.packageVersion}`);
+  }
 
   public toggleType(): void {
     this.type = (this.type === 'component') ? 'directive' : 'component';

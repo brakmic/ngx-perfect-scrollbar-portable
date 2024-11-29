@@ -1,14 +1,16 @@
 # Angular Perfect Scrollbar Portable
 
 This is an Angular wrapper library for the **Perfect Scrollbar**.
+ 
+![showcase](./showcase.gif)
 
 ### Fork Notice
 
-This fork was created due to the discontinuation of development on the original library from the repository [zefoy/ngx-perfect-scrollbar](https://github.com/zefoy/ngx-perfect-scrollbar). The original library hasn't been maintained for a while and exhibited incompatibilities with Angular version 18. This fork addresses those issues and makes the library compatible with Angular version 18.
+This fork was created due to the discontinuation of development on the original library from the repository [zefoy/ngx-perfect-scrollbar](https://github.com/zefoy/ngx-perfect-scrollbar). The original library hasn't been maintained for a while and exhibited incompatibilities with Angular versions 17-19. This fork addresses those issues and makes the library compatible with Angular version 19.
 
 ### Prerequisites
 
-For utilizing this library, it's essential to have at least Node 16 installed on your machine. Additionally, while NPM can be used, [PNPM](https://pnpm.io/) is preferred due to its efficient handling of node modules.
+For utilizing this library, it's essential to have at least Node 18.19.1 installed on your machine. Additionally, while NPM can be used, [PNPM](https://pnpm.io/) is preferred due to its efficient handling of node modules.
 
 
 ### Building the library
