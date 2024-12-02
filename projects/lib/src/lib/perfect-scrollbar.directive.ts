@@ -50,7 +50,7 @@ export class PerfectScrollbarDirective implements OnInit, OnDestroy, DoCheck, On
   @Output() psXReachStart: EventEmitter<any> = new EventEmitter<any>();
 
   constructor(private zone: NgZone, private differs: KeyValueDiffers,
-    public elementRef: ElementRef, @Inject(PLATFORM_ID) private platformId: Object,
+    public elementRef: ElementRef, @Inject(PLATFORM_ID) private platformId: object,
     @Optional() @Inject(PERFECT_SCROLLBAR_CONFIG) private defaults: PerfectScrollbarConfigInterface) {}
 
   ngOnInit(): void {
