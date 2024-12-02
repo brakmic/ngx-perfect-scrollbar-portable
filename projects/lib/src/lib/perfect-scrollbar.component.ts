@@ -80,7 +80,7 @@ export class PerfectScrollbarComponent implements OnInit, OnDestroy, DoCheck {
   @ViewChild(PerfectScrollbarDirective, { static: true }) directiveRef?: PerfectScrollbarDirective;
 
   constructor(private zone: NgZone, private cdRef: ChangeDetectorRef,
-    @Inject(PLATFORM_ID) private platformId: Object) {}
+    @Inject(PLATFORM_ID) private platformId: object) {}
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
