@@ -9,7 +9,7 @@
   class="box-container"
   fxLayout="column"
   [ngStyle.lt-sm]="'min-height: 800px;'"
->
+  >
   <div class="app-title">
     Simple example app for the ngx-perfect-scrollbar-portable
   </div>
@@ -25,13 +25,13 @@
     fxLayout.lt-sm="column"
     fxLayoutAlign="stretch"
     fxFlex="100%"
-  >
+    >
     <div
       class="vertical-container"
       fxLayout="column"
       fxLayoutAlign="stretch"
       fxFlex="50%"
-    >
+      >
       <div class="box-title">Controls</div>
 
       <div
@@ -39,16 +39,16 @@
         fxLayout="column"
         fxLayoutAlign="stretch"
         fxFlex="auto"
-      >
+        >
         <div
           class="action-button"
           fxLayout="column"
           fxLayoutAlign="center"
           fxFlex="auto"
           (click)="toggleType()"
-        >
+          >
           {{
-            type == "component" ? "Switch to directive" : "Switch to component"
+          type == "component" ? "Switch to directive" : "Switch to component"
           }}
         </div>
 
@@ -58,7 +58,7 @@
           fxLayoutAlign="center"
           fxFlex="auto"
           (click)="scrollToTop()"
-        >
+          >
           Scroll to top
         </div>
 
@@ -68,7 +68,7 @@
           fxLayoutAlign="center"
           fxFlex="auto"
           (click)="scrollToLeft()"
-        >
+          >
           Scroll to left
         </div>
 
@@ -78,7 +78,7 @@
           fxLayoutAlign="center"
           fxFlex="auto"
           (click)="scrollToRight()"
-        >
+          >
           Scroll to right
         </div>
 
@@ -88,7 +88,7 @@
           fxLayoutAlign="center"
           fxFlex="auto"
           (click)="scrollToBottom()"
-        >
+          >
           Scroll to bottom
         </div>
 
@@ -98,7 +98,7 @@
           fxLayoutAlign="center"
           fxFlex="auto"
           (click)="scrollToXY(25, 50)"
-        >
+          >
           Animate to 25,50
         </div>
       </div>
@@ -109,7 +109,7 @@
       fxLayout="column"
       fxLayoutAlign="stretch"
       fxFlex="50%"
-    >
+      >
       <div class="box-title">Perfect Scrollbar</div>
 
       <div
@@ -117,89 +117,91 @@
         fxLayout="column"
         fxLayoutAlign="stretch"
         fxFlex="auto"
-      >
-        <perfect-scrollbar
-          *ngIf="type === 'component'"
-          class="scroll-container"
-          fxFlex="auto"
-          [config]="config"
-          [scrollIndicators]="true"
-          (psXReachEnd)="onScrollEvent($event)"
-          (psYReachEnd)="onScrollEvent($event)"
-          (psXReachStart)="onScrollEvent($event)"
-          (psYReachStart)="onScrollEvent($event)"
         >
-          <div class="scrollable-content">
-            Scroll<br />
-            me!<br />
-            <br />
-            I<br />
-            am<br />
-            an<br />
-            example<br />
-            content<br />
-            text<br />
-            for<br />
-            this<br />
-            really<br />
-            cooooooooooooooooooooooooooooooooooooooooooooooooool<br />
-            scrollable<br />
-            area<br />
-            in<br />
-            this<br />
-            example<br />
-            app<br />
-            which<br />
-            is<br />
-            using<br />
-            the<br />
-            angular2<br />
-            perfect<br />
-            scrollbar<br />
-            library<br />
-          </div>
-        </perfect-scrollbar>
+        @if (type === 'component') {
+          <perfect-scrollbar
+            class="scroll-container"
+            fxFlex="auto"
+            [config]="config"
+            [scrollIndicators]="true"
+            (psXReachEnd)="onScrollEvent($event)"
+            (psYReachEnd)="onScrollEvent($event)"
+            (psXReachStart)="onScrollEvent($event)"
+            (psYReachStart)="onScrollEvent($event)"
+            >
+            <div class="scrollable-content">
+              Scroll<br />
+              me!<br />
+              <br />
+              I<br />
+              am<br />
+              an<br />
+              example<br />
+              content<br />
+              text<br />
+              for<br />
+              this<br />
+              really<br />
+              cooooooooooooooooooooooooooooooooooooooooooooooooool<br />
+              scrollable<br />
+              area<br />
+              in<br />
+              this<br />
+              example<br />
+              app<br />
+              which<br />
+              is<br />
+              using<br />
+              the<br />
+              angular2<br />
+              perfect<br />
+              scrollbar<br />
+              library<br />
+            </div>
+          </perfect-scrollbar>
+        }
 
-        <div
-          *ngIf="type === 'directive'"
-          class="scroll-container ps"
-          fxFlex="auto"
-          [perfectScrollbar]="config"
-          (psXReachEnd)="onScrollEvent($event)"
-          (psYReachEnd)="onScrollEvent($event)"
-          (psXReachStart)="onScrollEvent($event)"
-          (psYReachStart)="onScrollEvent($event)"
-        >
-          <div class="scrollable-content">
-            Scroll<br />
-            me!<br />
-            <br />
-            I<br />
-            am<br />
-            an<br />
-            example<br />
-            content<br />
-            text<br />
-            for<br />
-            this<br />
-            really<br />
-            cooooooooooooooooooooooooooooooooooooooooooooooooool<br />
-            scrollable<br />
-            area<br />
-            in<br />
-            this<br />
-            example<br />
-            app<br />
-            which<br />
-            is<br />
-            using<br />
-            the<br />
-            angular2<br />
-            perfect<br />
-            scrollbar<br />
-            library<br />
+        @if (type === 'directive') {
+          <div
+            class="scroll-container ps"
+            fxFlex="auto"
+            [perfectScrollbar]="config"
+            (psXReachEnd)="onScrollEvent($event)"
+            (psYReachEnd)="onScrollEvent($event)"
+            (psXReachStart)="onScrollEvent($event)"
+            (psYReachStart)="onScrollEvent($event)"
+            >
+            <div class="scrollable-content">
+              Scroll<br />
+              me!<br />
+              <br />
+              I<br />
+              am<br />
+              an<br />
+              example<br />
+              content<br />
+              text<br />
+              for<br />
+              this<br />
+              really<br />
+              cooooooooooooooooooooooooooooooooooooooooooooooooool<br />
+              scrollable<br />
+              area<br />
+              in<br />
+              this<br />
+              example<br />
+              app<br />
+              which<br />
+              is<br />
+              using<br />
+              the<br />
+              angular2<br />
+              perfect<br />
+              scrollbar<br />
+              library<br />
+            </div>
           </div>
-        </div>
+        }
       </div>
     </div>
   </div>
