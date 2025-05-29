@@ -1,5 +1,5 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ViewChild, OnInit, AfterViewInit } from '@angular/core';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { PerfectScrollbarComponent, PerfectScrollbarDirective, PerfectScrollbarModule } from 'ngx-perfect-scrollbar-portable';
@@ -15,7 +15,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 @Component({
   selector: 'app-root',
   imports: [
-    CommonModule,
     FlexLayoutModule,
     PerfectScrollbarModule
   ],
@@ -48,7 +47,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.angularVersion = VERSION.full;
     console.log(`Running Angular version: ${this.angularVersion}`);
-
     console.log(`Using ngx-perfect-scrollbar-portable version: ${this.packageVersion}`);
   }
 
@@ -63,7 +61,7 @@ export class AppComponent implements OnInit {
   public scrollToXY(x: number, y: number): void {
     if (this.type === 'directive' && this.directiveRef) {
       this.directiveRef.scrollTo(x, y, 500);
-    } else if (this.type === 'component' && this.componentRef && this.componentRef.directiveRef) {
+    } else if (this.type === 'component' && this.componentRef && this.componentRef.directiveRef) {
       this.componentRef.directiveRef.scrollTo(x, y, 500);
     }
   }
@@ -71,7 +69,7 @@ export class AppComponent implements OnInit {
   public scrollToTop(): void {
     if (this.type === 'directive' && this.directiveRef) {
       this.directiveRef.scrollToTop();
-    } else if (this.type === 'component' && this.componentRef && this.componentRef.directiveRef) {
+    } else if (this.type === 'component' && this.componentRef && this.componentRef.directiveRef) {
       this.componentRef.directiveRef.scrollToTop();
     }
   }
@@ -79,7 +77,7 @@ export class AppComponent implements OnInit {
   public scrollToLeft(): void {
     if (this.type === 'directive' && this.directiveRef) {
       this.directiveRef.scrollToLeft();
-    } else if (this.type === 'component' && this.componentRef && this.componentRef.directiveRef) {
+    } else if (this.type === 'component' && this.componentRef && this.componentRef.directiveRef) {
       this.componentRef.directiveRef.scrollToLeft();
     }
   }
@@ -87,7 +85,7 @@ export class AppComponent implements OnInit {
   public scrollToRight(): void {
     if (this.type === 'directive' && this.directiveRef) {
       this.directiveRef.scrollToRight();
-    } else if (this.type === 'component' && this.componentRef && this.componentRef.directiveRef) {
+    } else if (this.type === 'component' && this.componentRef && this.componentRef.directiveRef) {
       this.componentRef.directiveRef.scrollToRight();
     }
   }
@@ -95,7 +93,7 @@ export class AppComponent implements OnInit {
   public scrollToBottom(): void {
     if (this.type === 'directive' && this.directiveRef) {
       this.directiveRef.scrollToBottom();
-    } else if (this.type === 'component' && this.componentRef && this.componentRef.directiveRef) {
+    } else if (this.type === 'component' && this.componentRef && this.componentRef.directiveRef) {
       this.componentRef.directiveRef.scrollToBottom();
     }
   }
