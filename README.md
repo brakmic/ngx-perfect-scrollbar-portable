@@ -1,17 +1,16 @@
 # Angular Perfect Scrollbar Portable
 
 This is an Angular wrapper library for the **Perfect Scrollbar**.
- 
+
 ![showcase](./showcase.gif)
 
-### Fork Notice
+## Fork Notice
 
-This fork was created due to the discontinuation of development on the original library from the repository [zefoy/ngx-perfect-scrollbar](https://github.com/zefoy/ngx-perfect-scrollbar). The original library hasn't been maintained for a while and exhibited incompatibilities with Angular versions 17-19. This fork addresses those issues and makes the library compatible with Angular version 19.
+This fork was created due to the discontinuation of development on the original library from the repository [zefoy/ngx-perfect-scrollbar](https://github.com/zefoy/ngx-perfect-scrollbar). The original library hasn't been maintained for a while and exhibited incompatibilities with Angular versions 17-20. This fork addresses those issues and makes the library compatible with Angular version 20.
 
 ### Prerequisites
 
-For utilizing this library, it's essential to have at least Node 18.19.1 installed on your machine. Additionally, while NPM can be used, [PNPM](https://pnpm.io/) is preferred due to its efficient handling of node modules.
-
+For utilizing this library, it's essential to have at least Node 20.19 installed on your machine. Additionally, while NPM can be used, [PNPM](https://pnpm.io/) is preferred due to its efficient handling of node modules.
 
 ### Building the library
 
@@ -26,7 +25,7 @@ pnpm build
 pnpm install ngx-perfect-scrollbar-portable --save
 ```
 
-##### Load the module for your app (with global configuration):
+#### Load the module for your app (with global configuration):
 
 Providing the global configuration is optional and when used you should only provide the configuration in your root module.
 
@@ -54,13 +53,13 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 })
 ```
 
-##### Use it in your HTML template (with custom configuration):
+##### Use it in your HTML template (with custom configuration)
 
 This library provides two ways to create a Perfect Scrollbar element, a component and a directive. Component tries to make the usage as simple as possible and the directive is meant for more custom / advanced use cases.
 
 The scroll area always needs some fixed height to work. The default styles uses 100% as the height value so the parent needs to have fixed height or you need to set it via CSS styles. Otherwise the height keeps growing and you won't get the scrollbars.
 
-**COMPONENT USAGE**
+### Component Usage
 
 Simply replace the element that would ordinarily be passed to `PerfectScrollbar` with the perfect-scollbar component.
 
@@ -84,7 +83,7 @@ Simply replace the element that would ordinarily be passed to `PerfectScrollbar`
                         // Example: ps-y-reach-start -> psYReachStart
 ```
 
-**DIRECTIVE USAGE**
+### Directive Usage
 
 When using only the directive you need to provide your own theming or import the default theme:
 
@@ -110,7 +109,7 @@ Perfect Scrollbar directive should be used with div elements and can take option
                         // Example: ps-y-reach-start -> psYReachStart
 ```
 
-##### Available configuration options (custom / global configuration):
+#### Available configuration options (custom / global configuration)
 
 ```javascript
 handlers                // List of event handlers to scroll the element.
@@ -128,7 +127,7 @@ scrollYMarginOffset     // Offset before enabling the Y scroller (Default: 0).
 
 For more detailed documentation with all the supported events / options see the the Perfect Scrollbar documentation.
 
-##### Available control / helper functions (provided by the directive):
+##### Available control / helper functions (provided by the directive)
 
 ```javascript
 ps()                                        // Returns reference to the PS instance.
@@ -154,6 +153,6 @@ scrollToElement(element, offset?, speed?)   // Animate scroll to given or matchi
 
 Above functions can be accessed through the directive reference (available as directiveRef in the component). Position and offset needs to be given in pixels and speed in milliseconds.
 
+### LICENSE
 
-## LICENSE
 [MIT](./LICENSE.md)
