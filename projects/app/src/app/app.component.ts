@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
   @ViewChild(PerfectScrollbarDirective, { static: false }) directiveRef?: PerfectScrollbarDirective;
 
   public angularVersion: string = '';
-  public packageVersion: string = '10.1.12';
+  public packageVersion: string = '10.1.14';
 
   constructor() {}
 
