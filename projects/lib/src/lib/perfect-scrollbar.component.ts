@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Subject, merge, fromEvent } from 'rxjs';
 import { mapTo, takeUntil, distinctUntilChanged } from 'rxjs/operators';
 
@@ -24,7 +24,7 @@ import { ForceNativeScrollDirective } from './perfect-scrollbar-force-native-scr
     '../../../../node_modules/perfect-scrollbar/css/perfect-scrollbar.css'
   ],
   encapsulation: ViewEncapsulation.None,
-  imports: [CommonModule, PerfectScrollbarDirective, ForceNativeScrollDirective]
+  imports: [PerfectScrollbarDirective, ForceNativeScrollDirective]
 })
 export class PerfectScrollbarComponent implements OnInit, OnDestroy, DoCheck {
   public states: any = {};
